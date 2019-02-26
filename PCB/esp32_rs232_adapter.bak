@@ -1,0 +1,187 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB9_Male J?
+U 1 1 5C74F18C
+P 6950 2900
+F 0 "J?" H 7130 2946 50  0000 L CNN
+F 1 "DB9_Male" H 7130 2855 50  0000 L CNN
+F 2 "" H 6950 2900 50  0001 C CNN
+F 3 " ~" H 6950 2900 50  0001 C CNN
+	1    6950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32D U?
+U 1 1 5C74F2C1
+P 5400 5950
+F 0 "U?" H 5400 7528 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5400 7437 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5400 4450 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 5100 6000 50  0001 C CNN
+	1    5400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F6B9
+P 2050 2350
+F 0 "C?" H 2141 2396 50  0000 L CNN
+F 1 "CP1_Small" H 2141 2305 50  0000 L CNN
+F 2 "" H 2050 2350 50  0001 C CNN
+F 3 "~" H 2050 2350 50  0001 C CNN
+	1    2050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_UART:MAX3232 U?
+U 1 1 5C74DE0D
+P 3400 3100
+F 0 "U?" H 3400 4478 50  0000 C CNN
+F 1 "MAX3232" H 3400 4387 50  0000 C CNN
+F 2 "" H 3450 2050 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 3400 3200 50  0001 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F70B
+P 3850 1800
+F 0 "C?" H 3941 1846 50  0000 L CNN
+F 1 "CP1_Small" H 3941 1755 50  0000 L CNN
+F 2 "" H 3850 1800 50  0001 C CNN
+F 3 "~" H 3850 1800 50  0001 C CNN
+	1    3850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F75B
+P 4550 2350
+F 0 "C?" H 4641 2396 50  0000 L CNN
+F 1 "CP1_Small" H 4641 2305 50  0000 L CNN
+F 2 "" H 4550 2350 50  0001 C CNN
+F 3 "~" H 4550 2350 50  0001 C CNN
+	1    4550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F7AB
+P 4900 2850
+F 0 "C?" H 4991 2896 50  0000 L CNN
+F 1 "CP1_Small" H 4991 2805 50  0000 L CNN
+F 2 "" H 4900 2850 50  0001 C CNN
+F 3 "~" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F7EB
+P 4900 3150
+F 0 "C?" H 4991 3196 50  0000 L CNN
+F 1 "CP1_Small" H 4991 3105 50  0000 L CNN
+F 2 "" H 4900 3150 50  0001 C CNN
+F 3 "~" H 4900 3150 50  0001 C CNN
+	1    4900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2200 2050 2200
+Wire Wire Line
+	2050 2200 2050 2250
+Wire Wire Line
+	2050 2450 2050 2500
+Wire Wire Line
+	2050 2500 2600 2500
+Wire Wire Line
+	4200 2200 4550 2200
+Wire Wire Line
+	4550 2200 4550 2250
+Wire Wire Line
+	4550 2450 4550 2500
+Wire Wire Line
+	4550 2500 4200 2500
+Wire Wire Line
+	3400 1900 3400 1550
+Wire Wire Line
+	3400 1550 3850 1550
+Wire Wire Line
+	3850 1550 3850 1700
+Connection ~ 3400 1550
+Wire Wire Line
+	3400 1550 3400 1450
+Wire Wire Line
+	3850 1900 3850 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FA0E
+P 3850 1950
+F 0 "#PWR?" H 3850 1700 50  0001 C CNN
+F 1 "GND" H 3855 1777 50  0000 C CNN
+F 2 "" H 3850 1950 50  0001 C CNN
+F 3 "" H 3850 1950 50  0001 C CNN
+	1    3850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FA30
+P 3400 4400
+F 0 "#PWR?" H 3400 4150 50  0001 C CNN
+F 1 "GND" H 3405 4227 50  0000 C CNN
+F 2 "" H 3400 4400 50  0001 C CNN
+F 3 "" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4400 3400 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FBFA
+P 4700 3050
+F 0 "#PWR?" H 4700 2800 50  0001 C CNN
+F 1 "GND" H 4705 2877 50  0000 C CNN
+F 2 "" H 4700 3050 50  0001 C CNN
+F 3 "" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3000
+Wire Wire Line
+	4900 3000 4900 2950
+Wire Wire Line
+	4900 3000 4900 3050
+Wire Wire Line
+	4900 3250 4900 3300
+Wire Wire Line
+	4900 3300 4400 3300
+Wire Wire Line
+	4400 3300 4400 3000
+Wire Wire Line
+	4400 3000 4200 3000
+Wire Wire Line
+	4200 2700 4900 2700
+Wire Wire Line
+	4900 2700 4900 2750
+Wire Wire Line
+	4700 3050 4700 3000
+Wire Wire Line
+	4700 3000 4900 3000
+$EndSCHEMATC

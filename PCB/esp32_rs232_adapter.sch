@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB9_Male J?
+U 1 1 5C74F18C
+P 7850 5300
+F 0 "J?" V 7723 5855 50  0000 L CNN
+F 1 "DB9_Male" V 7814 5855 50  0000 L CNN
+F 2 "" H 7850 5300 50  0001 C CNN
+F 3 " ~" H 7850 5300 50  0001 C CNN
+	1    7850 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32D U?
+U 1 1 5C74F2C1
+P 5200 4150
+F 0 "U?" H 5200 5728 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5200 5637 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5200 2650 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4900 4200 50  0001 C CNN
+	1    5200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F6B9
+P 6500 2400
+F 0 "C?" H 6591 2446 50  0000 L CNN
+F 1 "CP1_Small" H 6591 2355 50  0000 L CNN
+F 2 "" H 6500 2400 50  0001 C CNN
+F 3 "~" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_UART:MAX3232 U?
+U 1 1 5C74DE0D
+P 7850 3150
+F 0 "U?" H 7850 4528 50  0000 C CNN
+F 1 "MAX3232" H 7850 4437 50  0000 C CNN
+F 2 "" H 7900 2100 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 7850 3250 50  0001 C CNN
+	1    7850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F70B
+P 8300 1850
+F 0 "C?" H 8391 1896 50  0000 L CNN
+F 1 "CP1_Small" H 8391 1805 50  0000 L CNN
+F 2 "" H 8300 1850 50  0001 C CNN
+F 3 "~" H 8300 1850 50  0001 C CNN
+	1    8300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F75B
+P 9000 2400
+F 0 "C?" H 9091 2446 50  0000 L CNN
+F 1 "CP1_Small" H 9091 2355 50  0000 L CNN
+F 2 "" H 9000 2400 50  0001 C CNN
+F 3 "~" H 9000 2400 50  0001 C CNN
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F7AB
+P 9350 2900
+F 0 "C?" H 9441 2946 50  0000 L CNN
+F 1 "CP1_Small" H 9441 2855 50  0000 L CNN
+F 2 "" H 9350 2900 50  0001 C CNN
+F 3 "~" H 9350 2900 50  0001 C CNN
+	1    9350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C74F7EB
+P 9350 3200
+F 0 "C?" H 9441 3246 50  0000 L CNN
+F 1 "CP1_Small" H 9441 3155 50  0000 L CNN
+F 2 "" H 9350 3200 50  0001 C CNN
+F 3 "~" H 9350 3200 50  0001 C CNN
+	1    9350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2250 6500 2250
+Wire Wire Line
+	6500 2250 6500 2300
+Wire Wire Line
+	6500 2500 6500 2550
+Wire Wire Line
+	6500 2550 7050 2550
+Wire Wire Line
+	8650 2250 9000 2250
+Wire Wire Line
+	9000 2250 9000 2300
+Wire Wire Line
+	9000 2500 9000 2550
+Wire Wire Line
+	9000 2550 8650 2550
+Wire Wire Line
+	7850 1950 7850 1600
+Wire Wire Line
+	7850 1600 8300 1600
+Wire Wire Line
+	8300 1600 8300 1750
+Connection ~ 7850 1600
+Wire Wire Line
+	7850 1600 7850 1500
+Wire Wire Line
+	8300 1950 8300 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FA0E
+P 8300 2000
+F 0 "#PWR?" H 8300 1750 50  0001 C CNN
+F 1 "GND" H 8305 1827 50  0000 C CNN
+F 2 "" H 8300 2000 50  0001 C CNN
+F 3 "" H 8300 2000 50  0001 C CNN
+	1    8300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FA30
+P 7850 4400
+F 0 "#PWR?" H 7850 4150 50  0001 C CNN
+F 1 "GND" H 8000 4350 50  0000 C CNN
+F 2 "" H 7850 4400 50  0001 C CNN
+F 3 "" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4400 7850 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5C74FBFA
+P 9150 3100
+F 0 "#PWR?" H 9150 2850 50  0001 C CNN
+F 1 "GND" H 9155 2927 50  0000 C CNN
+F 2 "" H 9150 3100 50  0001 C CNN
+F 3 "" H 9150 3100 50  0001 C CNN
+	1    9150 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 3050
+Wire Wire Line
+	9350 3050 9350 3000
+Wire Wire Line
+	9350 3050 9350 3100
+Wire Wire Line
+	9350 3300 9350 3350
+Wire Wire Line
+	9350 3350 8850 3350
+Wire Wire Line
+	8850 3350 8850 3050
+Wire Wire Line
+	8850 3050 8650 3050
+Wire Wire Line
+	8650 2750 9350 2750
+Wire Wire Line
+	9350 2750 9350 2800
+Wire Wire Line
+	9150 3100 9150 3050
+Wire Wire Line
+	9150 3050 9350 3050
+Wire Wire Line
+	7450 5000 7450 4800
+Wire Wire Line
+	7450 4800 7550 4800
+Wire Wire Line
+	7550 4800 7550 5000
+Wire Wire Line
+	7550 4800 8050 4800
+Wire Wire Line
+	8050 4800 8050 5000
+Connection ~ 7550 4800
+Wire Wire Line
+	8250 5000 8250 4800
+Wire Wire Line
+	8250 4800 8550 4800
+Wire Wire Line
+	8550 4800 8550 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5C752181
+P 8550 4900
+F 0 "#PWR?" H 8550 4650 50  0001 C CNN
+F 1 "GND" H 8555 4727 50  0000 C CNN
+F 2 "" H 8550 4900 50  0001 C CNN
+F 3 "" H 8550 4900 50  0001 C CNN
+	1    8550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5000 7950 4700
+Wire Wire Line
+	7950 4700 8950 4700
+Wire Wire Line
+	8950 4700 8950 3450
+Wire Wire Line
+	8950 3450 8650 3450
+Wire Wire Line
+	8650 3850 8800 3850
+Wire Wire Line
+	8800 3850 8800 4600
+Wire Wire Line
+	8800 4600 7750 4600
+Wire Wire Line
+	7750 4600 7750 5000
+Wire Wire Line
+	7650 5000 7650 4550
+Wire Wire Line
+	7650 4550 8750 4550
+Wire Wire Line
+	8750 4550 8750 3250
+Wire Wire Line
+	8750 3250 8650 3250
+Wire Wire Line
+	7850 5000 7850 4650
+Wire Wire Line
+	7850 4650 8850 4650
+Wire Wire Line
+	8850 4650 8850 3650
+Wire Wire Line
+	8850 3650 8650 3650
+$EndSCHEMATC
