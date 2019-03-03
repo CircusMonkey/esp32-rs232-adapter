@@ -1,0 +1,523 @@
+EESchema Schematic File Version 4
+LIBS:esp32_rs232_adapter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5BFADB5B
+P 12000 1300
+F 0 "H?" H 12100 1346 50  0000 L CNN
+F 1 "MountingHole" H 12100 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 12000 1300 50  0001 C CNN
+F 3 "~" H 12000 1300 50  0001 C CNN
+	1    12000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5BFAE162
+P 12000 1500
+F 0 "H?" H 12100 1546 50  0000 L CNN
+F 1 "MountingHole" H 12100 1455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 12000 1500 50  0001 C CNN
+F 3 "~" H 12000 1500 50  0001 C CNN
+	1    12000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5BFAE1BA
+P 12000 1700
+F 0 "H?" H 12100 1746 50  0000 L CNN
+F 1 "MountingHole" H 12100 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 12000 1700 50  0001 C CNN
+F 3 "~" H 12000 1700 50  0001 C CNN
+	1    12000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5BFAE218
+P 12000 1900
+F 0 "H?" H 12100 1946 50  0000 L CNN
+F 1 "MountingHole" H 12100 1855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 12000 1900 50  0001 C CNN
+F 3 "~" H 12000 1900 50  0001 C CNN
+	1    12000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF53907
+P 2700 3650
+F 0 "#PWR?" H 2700 3400 50  0001 C CNN
+F 1 "GND" H 2705 3477 50  0000 C CNN
+F 2 "" H 2700 3650 50  0001 C CNN
+F 3 "" H 2700 3650 50  0001 C CNN
+	1    2700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2900 9700 2900
+Wire Wire Line
+	9550 3200 9550 3350
+Wire Wire Line
+	9550 2900 9550 3000
+$Comp
+L power_supplies:TPS737xx-plenoptoscope U?
+U 1 1 5C7F78F3
+P 8750 3050
+F 0 "U?" H 8750 3465 50  0000 C CNN
+F 1 "TPS73733" H 8750 3374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-6_TabPin3" H 8600 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps737.pdf" H 8600 3350 50  0001 C CNN
+F 4 "https://au.element14.com/texas-instruments/tps73733dcq/ic-voltage-regulator/dp/1703384" H 8750 3050 50  0001 C CNN "Supplier"
+F 5 "$2.64" H 8750 3050 50  0001 C CNN "Price"
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2900 8300 2900
+Wire Wire Line
+	8300 2900 8350 2900
+Connection ~ 7950 2900
+Wire Wire Line
+	7950 2900 7950 3050
+Wire Wire Line
+	9150 2900 9550 2900
+Connection ~ 9550 2900
+Wire Wire Line
+	8350 3200 8300 3200
+Wire Wire Line
+	8300 3200 8300 2900
+Connection ~ 8300 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5C832AA9
+P 9550 3350
+F 0 "#PWR?" H 9550 3100 50  0001 C CNN
+F 1 "GND" H 9555 3177 50  0000 C CNN
+F 2 "" H 9550 3350 50  0001 C CNN
+F 3 "" H 9550 3350 50  0001 C CNN
+	1    9550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C832B16
+P 8700 3550
+F 0 "#PWR?" H 8700 3300 50  0001 C CNN
+F 1 "GND" H 8705 3377 50  0000 C CNN
+F 2 "" H 8700 3550 50  0001 C CNN
+F 3 "" H 8700 3550 50  0001 C CNN
+	1    8700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C832B83
+P 7950 3350
+F 0 "#PWR?" H 7950 3100 50  0001 C CNN
+F 1 "GND" H 7955 3177 50  0000 C CNN
+F 2 "" H 7950 3350 50  0001 C CNN
+F 3 "" H 7950 3350 50  0001 C CNN
+	1    7950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3500 8700 3550
+$Comp
+L Device:C_Small C?
+U 1 1 5C841C27
+P 7950 3150
+F 0 "C?" H 8042 3196 50  0000 L CNN
+F 1 "1u" H 8042 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7950 3150 50  0001 C CNN
+F 3 "~" H 7950 3150 50  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C841CF1
+P 9550 3100
+F 0 "C?" H 9642 3146 50  0000 L CNN
+F 1 "1u" H 9642 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9550 3100 50  0001 C CNN
+F 3 "~" H 9550 3100 50  0001 C CNN
+	1    9550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5C4ADCCF
+P 2700 3150
+F 0 "J?" H 2755 3617 50  0000 C CNN
+F 1 "USB_B_Micro" H 2755 3526 50  0000 C CNN
+F 2 "power_supplies:USB_Micro-B_Molex-105017-0001" H 2850 3100 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/1050170001_IO_CONNECTORS.pdf" H 2850 3100 50  0001 C CNN
+F 4 "https://au.element14.com/molex/105017-0001/usb-conn-2-0-micro-usb-type-b/dp/2293836?st=usb" H 2700 3150 50  0001 C CNN "Supplier"
+F 5 "$1.13" H 2700 3150 50  0001 C CNN "Price"
+	1    2700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3550 2600 3600
+Wire Wire Line
+	2600 3600 2700 3600
+$Comp
+L Device:C_Small C?
+U 1 1 5C4A11C5
+P 9250 3400
+F 0 "C?" H 9342 3446 50  0000 L CNN
+F 1 "10n" H 9342 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9250 3400 50  0001 C CNN
+F 3 "~" H 9250 3400 50  0001 C CNN
+	1    9250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A145F
+P 9250 3550
+F 0 "#PWR?" H 9250 3300 50  0001 C CNN
+F 1 "GND" H 9255 3377 50  0000 C CNN
+F 2 "" H 9250 3550 50  0001 C CNN
+F 3 "" H 9250 3550 50  0001 C CNN
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3550 9250 3500
+Wire Wire Line
+	9250 3300 9250 3200
+Wire Wire Line
+	9250 3200 9150 3200
+Wire Wire Line
+	5950 2900 6250 2900
+Wire Wire Line
+	6250 3150 6250 3250
+$Comp
+L Device:Fuse_Small F?
+U 1 1 5C494BB4
+P 6250 3050
+F 0 "F?" H 6250 3235 50  0000 C CNN
+F 1 "4A" H 6250 3144 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6250 3050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2605299.pdf?_ga=2.18725948.445235074.1548035912-1628748241.1538478974&_gac=1.159502159.1545261800.CjwKCAiA9efgBRAYEiwAUT-jtLHS8b0fAWIGe-kych32dLqRlZ5EtCAZswPKZC3Ud-N_jm54EAYF5xoCtOoQAvD_BwE" H 6250 3050 50  0001 C CNN
+F 4 "https://au.element14.com/multicomp/mccfb1206ttt-4/fuse-smd-4a-slow-blow-1206/dp/2850033" H 6250 3050 50  0001 C CNN "Supplier"
+F 5 "$0.564" H 6250 3050 50  0001 C CNN "Price"
+	1    6250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C47EED8
+P 3250 2950
+F 0 "R?" H 3309 2996 50  0000 L CNN
+F 1 "0.2" H 3309 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3250 2950 50  0001 C CNN
+F 3 "~" H 3250 2950 50  0001 C CNN
+	1    3250 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3200 4000 3250
+Wire Wire Line
+	4300 3200 4300 3250
+Wire Wire Line
+	4300 2950 4700 2950
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 3000 4300 2950
+Wire Wire Line
+	3500 2950 4000 2950
+Wire Wire Line
+	4000 2950 4300 2950
+Connection ~ 4000 2950
+Wire Wire Line
+	4000 3000 4000 2950
+Wire Wire Line
+	6250 3600 6250 3800
+Wire Wire Line
+	6250 2900 6250 2850
+Wire Wire Line
+	6900 2900 6900 3000
+Connection ~ 6250 2900
+Wire Wire Line
+	6250 2900 6900 2900
+Wire Wire Line
+	6250 2950 6250 2900
+Wire Wire Line
+	6900 3600 6250 3600
+Connection ~ 6250 3600
+Wire Wire Line
+	6250 3550 6250 3600
+Text Label 7500 3250 2    50   ~ 0
+BATT_V_SIG
+Wire Wire Line
+	6900 3250 6900 3300
+Wire Wire Line
+	6900 3250 7500 3250
+Wire Wire Line
+	6900 3600 6900 3500
+Connection ~ 6900 3250
+Wire Wire Line
+	6900 3200 6900 3250
+$Comp
+L Device:R_Small R?
+U 1 1 5C535DD9
+P 6900 3400
+F 0 "R?" H 6959 3446 50  0000 L CNN
+F 1 "10k" H 6959 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6900 3400 50  0001 C CNN
+F 3 "~" H 6900 3400 50  0001 C CNN
+	1    6900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C535CAB
+P 6900 3100
+F 0 "R?" H 6959 3146 50  0000 L CNN
+F 1 "10k" H 6959 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6900 3100 50  0001 C CNN
+F 3 "~" H 6900 3100 50  0001 C CNN
+	1    6900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4000 5900 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5C527D0F
+P 5900 4000
+F 0 "#PWR?" H 5900 3750 50  0001 C CNN
+F 1 "GND" H 5905 3827 50  0000 C CNN
+F 2 "" H 5900 4000 50  0001 C CNN
+F 3 "" H 5900 4000 50  0001 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+Text Label 4400 3600 0    50   ~ 0
+charge_status
+Wire Wire Line
+	4000 3700 5000 3700
+Wire Wire Line
+	4000 3550 4000 3700
+Wire Wire Line
+	4300 3600 5000 3600
+Wire Wire Line
+	4300 3550 4300 3600
+Wire Wire Line
+	4700 3300 5000 3300
+Wire Wire Line
+	3500 3300 3500 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5C4E7ECD
+P 3500 3350
+F 0 "#PWR?" H 3500 3100 50  0001 C CNN
+F 1 "GND" H 3505 3177 50  0000 C CNN
+F 2 "" H 3500 3350 50  0001 C CNN
+F 3 "" H 3500 3350 50  0001 C CNN
+	1    3500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2950 3500 3100
+Wire Wire Line
+	4700 3200 4700 3300
+Wire Wire Line
+	4700 3200 4700 2950
+Connection ~ 4700 3200
+Wire Wire Line
+	5000 3200 4700 3200
+Wire Wire Line
+	5400 4000 5400 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5C4BD85A
+P 5400 4000
+F 0 "#PWR?" H 5400 3750 50  0001 C CNN
+F 1 "GND" H 5405 3827 50  0000 C CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C4BD357
+P 4300 3400
+F 0 "D?" H 4200 3450 50  0000 C CNN
+F 1 "RED_LED" H 4300 3300 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4300 3400 50  0001 C CNN
+F 3 "~" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C4BD251
+P 4000 3400
+F 0 "D?" H 3900 3450 50  0000 C CNN
+F 1 "GREEN_LED" H 3950 3300 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4000 3400 50  0001 C CNN
+F 3 "~" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5800 3600 5950 3600
+Wire Wire Line
+	5950 3600 6250 3600
+Connection ~ 5950 3600
+Wire Wire Line
+	5950 3500 5950 3600
+$Comp
+L Device:C_Small C?
+U 1 1 5C4ADFEE
+P 5950 3400
+F 0 "C?" H 6042 3446 50  0000 L CNN
+F 1 "10u" H 6042 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5950 3400 50  0001 C CNN
+F 3 "~" H 5950 3400 50  0001 C CNN
+	1    5950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C4AD987
+P 3500 3200
+F 0 "C?" H 3592 3246 50  0000 L CNN
+F 1 "10u" H 3592 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C4AD354
+P 4300 3100
+F 0 "R?" H 4359 3146 50  0000 L CNN
+F 1 "200" H 4359 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4300 3100 50  0001 C CNN
+F 3 "~" H 4300 3100 50  0001 C CNN
+	1    4300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C4AD1A5
+P 4000 3100
+F 0 "R?" H 4059 3146 50  0000 L CNN
+F 1 "200" H 4059 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 3100 50  0001 C CNN
+F 3 "~" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C4AD007
+P 5900 3850
+F 0 "R?" H 5959 3896 50  0000 L CNN
+F 1 "1.2k" H 5959 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 3850 50  0001 C CNN
+F 3 "~" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3700 5900 3750
+Wire Wire Line
+	5800 3700 5900 3700
+Wire Wire Line
+	5950 3200 5950 2900
+Wire Wire Line
+	5950 3200 5950 3300
+Connection ~ 5950 3200
+Wire Wire Line
+	5800 3200 5950 3200
+$Comp
+L power_supplies:TP4056-plenoptoscope U?
+U 1 1 5C495639
+P 5500 3200
+F 0 "U?" H 5400 3515 50  0000 C CNN
+F 1 "TP4056" H 5400 3424 50  0000 C CNN
+F 2 "Package_SO:SSOP-8_3.9x5.05mm_P1.27mm" H 5400 3450 50  0001 C CNN
+F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf" H 5400 3450 50  0001 C CNN
+F 4 "https://www.aliexpress.com/item/20PCS-TP4056-4056-SOP8-new-and-original-free-shipping/32579408034.html?spm=2114.search0104.3.15.2820243f7EAHnB&ws_ab_test=searchweb0_0,searchweb201602_4_10065_10068_10130_10547_319_317_10548_10696_453_10084_454_10083_433_10618_431_10307_537_536_10131_10132_10133_10059_10884_10887_100031_321_322_10103,searchweb201603_35,ppcSwitch_0&algo_expid=a7d1f887-c842-4a70-9fcf-5259448f521d-2&algo_pvid=a7d1f887-c842-4a70-9fcf-5259448f521d" H 5500 3200 50  0001 C CNN "Supplier"
+F 5 "$0.09" H 5500 3200 50  0001 C CNN "Price"
+	1    5500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5BF52D03
+P 6250 3450
+F 0 "BT?" H 6368 3546 50  0000 L CNN
+F 1 "Battery_Cell" H 6368 3455 50  0000 L CNN
+F 2 "plenoptoscope:Keystone_18650_Battery_Clip" V 6250 3510 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1898890.pdf" V 6250 3510 50  0001 C CNN
+F 4 "https://au.element14.com/keystone/54/battery-clip-18mm-cell-pcb-through/dp/1888422" H 6250 3450 50  0001 C CNN "Supplier"
+F 5 "$1.29 * 2" H 6250 3450 50  0001 C CNN "Price"
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BF5800F
+P 6250 2850
+F 0 "#PWR?" H 6250 2700 50  0001 C CNN
+F 1 "+BATT" H 6265 3023 50  0000 C CNN
+F 2 "" H 6250 2850 50  0001 C CNN
+F 3 "" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF3D77E
+P 6250 3800
+F 0 "#PWR?" H 6250 3550 50  0001 C CNN
+F 1 "GND" H 6255 3627 50  0000 C CNN
+F 2 "" H 6250 3800 50  0001 C CNN
+F 3 "" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2950 3500 2950
+Connection ~ 3500 2950
+Connection ~ 2700 3600
+Wire Wire Line
+	2700 3550 2700 3600
+Wire Wire Line
+	2700 3650 2700 3600
+Wire Wire Line
+	3000 2950 3150 2950
+Wire Wire Line
+	6900 2900 7950 2900
+Connection ~ 6900 2900
+Wire Wire Line
+	7950 3250 7950 3350
+Text HLabel 9700 2900 2    50   Input ~ 0
+3.3V
+Text HLabel 7500 3250 2    50   Input ~ 0
+Vbatt_sig
+$EndSCHEMATC
