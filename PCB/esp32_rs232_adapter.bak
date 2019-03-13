@@ -17,13 +17,13 @@ $EndDescr
 $Comp
 L Connector:DB9_Male J2
 U 1 1 5C74F18C
-P 8600 5350
-F 0 "J2" V 8473 5905 50  0000 L CNN
-F 1 "DB9" V 8564 5905 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 8600 5350 50  0001 C CNN
-F 3 " ~" H 8600 5350 50  0001 C CNN
-F 4 "https://www.aliexpress.com/item/DB9-Female-PCB-Mount-D-Sub-9-pin-PCB-Connector-RS232-Connector-90-degree-bent-needle/32829295480.html" V 8600 5350 50  0001 C CNN "Supplier"
-	1    8600 5350
+P 8400 6050
+F 0 "J2" V 8273 6605 50  0000 L CNN
+F 1 "DB9" V 8364 6605 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 8400 6050 50  0001 C CNN
+F 3 " ~" H 8400 6050 50  0001 C CNN
+F 4 "https://www.aliexpress.com/item/DB9-Female-PCB-Mount-D-Sub-9-pin-PCB-Connector-RS232-Connector-90-degree-bent-needle/32829295480.html" V 8400 6050 50  0001 C CNN "Supplier"
+	1    8400 6050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -143,55 +143,43 @@ Wire Wire Line
 Wire Wire Line
 	10450 3100 10650 3100
 Wire Wire Line
-	8200 5050 8200 5000
+	8000 5750 8000 5700
 Wire Wire Line
-	8200 5000 8300 5000
+	8000 5700 8100 5700
 Wire Wire Line
-	8300 5000 8300 5050
+	8100 5700 8100 5750
 Wire Wire Line
-	8300 5000 8800 5000
+	8100 5700 8600 5700
 Wire Wire Line
-	8800 5000 8800 5050
-Connection ~ 8300 5000
+	8600 5700 8600 5750
+Connection ~ 8100 5700
 Wire Wire Line
-	9000 5050 9000 5000
+	8800 5750 8800 5700
 Wire Wire Line
-	9000 5000 9200 5000
+	8800 5700 9000 5700
 $Comp
 L power:GND #PWR014
 U 1 1 5C752181
-P 9200 5050
-F 0 "#PWR014" H 9200 4800 50  0001 C CNN
-F 1 "GND" H 9300 5050 50  0000 C CNN
-F 2 "" H 9200 5050 50  0001 C CNN
-F 3 "" H 9200 5050 50  0001 C CNN
-	1    9200 5050
+P 9000 5750
+F 0 "#PWR014" H 9000 5500 50  0001 C CNN
+F 1 "GND" H 9100 5750 50  0000 C CNN
+F 2 "" H 9000 5750 50  0001 C CNN
+F 3 "" H 9000 5750 50  0001 C CNN
+	1    9000 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 5050 8700 4750
-Wire Wire Line
-	10550 4750 10550 3500
+	8500 5750 8500 5250
 Wire Wire Line
 	10550 3500 9800 3500
 Wire Wire Line
 	9800 3900 10350 3900
 Wire Wire Line
-	10350 3900 10350 4650
-Wire Wire Line
-	8500 4650 8500 5050
-Wire Wire Line
-	8400 5050 8400 4600
-Wire Wire Line
-	8400 4600 10050 4600
-Wire Wire Line
-	10250 4600 10250 3300
+	8200 5750 8200 4950
 Wire Wire Line
 	10250 3300 9800 3300
 Wire Wire Line
-	8600 5050 8600 4700
-Wire Wire Line
-	10450 4700 10450 3700
+	8400 5750 8400 5150
 Wire Wire Line
 	10450 3700 9800 3700
 $Comp
@@ -382,73 +370,7 @@ CTS_RS232
 Text Label 10550 4400 1    50   ~ 0
 RTS_RS232
 Wire Wire Line
-	9200 5000 9200 5050
-$Comp
-L Connector:DB9_Male J3
-U 1 1 5C7F8A3E
-P 10050 5350
-F 0 "J3" V 9923 5905 50  0000 L CNN
-F 1 "DB9X" V 10014 5905 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 10050 5350 50  0001 C CNN
-F 3 " ~" H 10050 5350 50  0001 C CNN
-F 4 "https://www.aliexpress.com/item/DB9-Female-PCB-Mount-D-Sub-9-pin-PCB-Connector-RS232-Connector-90-degree-bent-needle/32829295480.html" V 10050 5350 50  0001 C CNN "Supplier"
-	1    10050 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9650 5050 9650 5000
-Wire Wire Line
-	9650 5000 9750 5000
-Wire Wire Line
-	9750 5000 9750 5050
-Wire Wire Line
-	9750 5000 10250 5000
-Wire Wire Line
-	10250 5000 10250 5050
-Connection ~ 9750 5000
-Wire Wire Line
-	10450 5050 10450 5000
-Wire Wire Line
-	10450 5000 10650 5000
-$Comp
-L power:GND #PWR017
-U 1 1 5C7F8A4D
-P 10650 5050
-F 0 "#PWR017" H 10650 4800 50  0001 C CNN
-F 1 "GND" H 10750 5050 50  0000 C CNN
-F 2 "" H 10650 5050 50  0001 C CNN
-F 3 "" H 10650 5050 50  0001 C CNN
-	1    10650 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10650 5000 10650 5050
-Wire Wire Line
-	8500 4650 10150 4650
-Wire Wire Line
-	8700 4750 9950 4750
-Wire Wire Line
-	8600 4700 9850 4700
-Wire Wire Line
-	10250 4600 10050 4600
-Wire Wire Line
-	10050 4600 10050 5050
-Connection ~ 10050 4600
-Wire Wire Line
-	9850 4700 9850 5050
-Connection ~ 9850 4700
-Wire Wire Line
-	9850 4700 10450 4700
-Wire Wire Line
-	10150 4650 10150 5050
-Connection ~ 10150 4650
-Wire Wire Line
-	10150 4650 10350 4650
-Wire Wire Line
-	9950 4750 9950 5050
-Connection ~ 9950 4750
-Wire Wire Line
-	9950 4750 10550 4750
+	9000 5700 9000 5750
 $Comp
 L power:+3.3V #PWR04
 U 1 1 5C832DD6
@@ -725,4 +647,89 @@ F 3 "~" V 7600 4650 50  0001 C CNN
 	1    7600 4650
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Switch:SW_DIP_x08 SW2
+U 1 1 5C88E389
+P 9750 5350
+F 0 "SW2" H 9750 6017 50  0000 C CNN
+F 1 "Null_Modem_Selector" H 9750 5926 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx08_Slide_6.7x21.88mm_W8.61mm_P2.54mm_LowProfile" H 9750 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/10pcs-lot-Slide-Type-SMT-SMD-Dip-Switch-2-54mm-Pitch-2-Row-4-Pin-2/32956815576.html" H 9750 5350 50  0001 C CNN
+	1    9750 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4950 10050 4950
+Wire Wire Line
+	9450 4950 9150 4950
+Wire Wire Line
+	10250 3300 10250 4950
+Wire Wire Line
+	10250 4950 10250 5350
+Wire Wire Line
+	10250 5350 10050 5350
+Connection ~ 10250 4950
+Wire Wire Line
+	10350 5050 10050 5050
+Wire Wire Line
+	10350 5050 10350 5450
+Wire Wire Line
+	10350 5450 10050 5450
+Connection ~ 10350 5050
+Wire Wire Line
+	10450 5150 10050 5150
+Wire Wire Line
+	10450 5150 10450 5550
+Wire Wire Line
+	10450 5550 10050 5550
+Connection ~ 10450 5150
+Wire Wire Line
+	10550 5250 10050 5250
+Wire Wire Line
+	10550 5250 10550 5650
+Wire Wire Line
+	10550 5650 10050 5650
+Connection ~ 10550 5250
+Wire Wire Line
+	9450 5050 9050 5050
+Wire Wire Line
+	8300 5050 8300 5750
+Wire Wire Line
+	10350 3900 10350 5050
+Wire Wire Line
+	9450 5150 9350 5150
+Wire Wire Line
+	10450 3700 10450 5150
+Wire Wire Line
+	9450 5250 9250 5250
+Wire Wire Line
+	10550 3500 10550 5250
+Wire Wire Line
+	9450 5350 9350 5350
+Wire Wire Line
+	9350 5350 9350 5150
+Connection ~ 9350 5150
+Wire Wire Line
+	9350 5150 8400 5150
+Wire Wire Line
+	9450 5550 9150 5550
+Wire Wire Line
+	9150 5550 9150 4950
+Connection ~ 9150 4950
+Wire Wire Line
+	9150 4950 8200 4950
+Wire Wire Line
+	9450 5450 9250 5450
+Wire Wire Line
+	9250 5450 9250 5250
+Connection ~ 9250 5250
+Wire Wire Line
+	9250 5250 8500 5250
+Wire Wire Line
+	9450 5650 9050 5650
+Wire Wire Line
+	9050 5650 9050 5050
+Connection ~ 9050 5050
+Wire Wire Line
+	9050 5050 8300 5050
 $EndSCHEMATC
