@@ -20,7 +20,7 @@ U 1 1 5C74F18C
 P 8400 6050
 F 0 "J2" V 8273 6605 50  0000 L CNN
 F 1 "DB9" V 8364 6605 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 8400 6050 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8400 6050 50  0001 C CNN
 F 3 " ~" H 8400 6050 50  0001 C CNN
 F 4 "https://www.aliexpress.com/item/DB9-Female-PCB-Mount-D-Sub-9-pin-PCB-Connector-RS232-Connector-90-degree-bent-needle/32829295480.html" V 8400 6050 50  0001 C CNN "Supplier"
 	1    8400 6050
@@ -732,4 +732,56 @@ Wire Wire Line
 Connection ~ 9050 5050
 Wire Wire Line
 	9050 5050 8300 5050
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5C979F20
+P 950 850
+AR Path="/5C7BB31A/5C979F20" Ref="H?"  Part="1" 
+AR Path="/5C979F20" Ref="H1"  Part="1" 
+F 0 "H1" H 1050 896 50  0000 L CNN
+F 1 "MountingHole" H 1050 805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 950 850 50  0001 C CNN
+F 3 "~" H 950 850 50  0001 C CNN
+	1    950  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5C979F27
+P 950 1050
+AR Path="/5C7BB31A/5C979F27" Ref="H?"  Part="1" 
+AR Path="/5C979F27" Ref="H2"  Part="1" 
+F 0 "H2" H 1050 1096 50  0000 L CNN
+F 1 "MountingHole" H 1050 1005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 950 1050 50  0001 C CNN
+F 3 "~" H 950 1050 50  0001 C CNN
+	1    950  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5C979F2E
+P 950 1250
+AR Path="/5C7BB31A/5C979F2E" Ref="H?"  Part="1" 
+AR Path="/5C979F2E" Ref="H3"  Part="1" 
+F 0 "H3" H 1050 1296 50  0000 L CNN
+F 1 "MountingHole" H 1050 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 950 1250 50  0001 C CNN
+F 3 "~" H 950 1250 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5C979F35
+P 950 1450
+AR Path="/5C7BB31A/5C979F35" Ref="H?"  Part="1" 
+AR Path="/5C979F35" Ref="H4"  Part="1" 
+F 0 "H4" H 1050 1496 50  0000 L CNN
+F 1 "MountingHole" H 1050 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 950 1450 50  0001 C CNN
+F 3 "~" H 950 1450 50  0001 C CNN
+	1    950  1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
