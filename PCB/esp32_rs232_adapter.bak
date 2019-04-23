@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:esp32_rs232_adapter-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -55,7 +55,7 @@ U 1 1 5C74DE0D
 P 9000 3200
 F 0 "U2" H 9000 4578 50  0000 C CNN
 F 1 "MAX3232" H 9000 4487 50  0000 C CNN
-F 2 "Package_SO:SSOP-16_5.3x6.2mm_P0.65mm" H 9050 2150 50  0001 L CNN
+F 2 "Package_SO:SOP-16_4.55x10.3mm_P1.27mm" H 9050 2150 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 9000 3300 50  0001 C CNN
 F 4 "https://www.aliexpress.com/item/in-stock-can-pay-MAX3232CSE-MAX3232-MAX3232ESE-SOP-16/32821460559.html" H 9000 3200 50  0001 C CNN "Supplier"
 	1    9000 3200
@@ -520,53 +520,6 @@ F 3 "~" H 8000 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 2800 5400 2800
-$Comp
-L Connector:Conn_01x04_Male J1
-U 1 1 5C7F4A31
-P 2700 4350
-F 0 "J1" H 2806 4628 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2806 4537 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2700 4350 50  0001 C CNN
-F 3 "~" H 2700 4350 50  0001 C CNN
-	1    2700 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 4250 3350 4250
-Wire Wire Line
-	2900 4350 3350 4350
-Wire Wire Line
-	2900 4550 3350 4550
-$Comp
-L power:GND #PWR01
-U 1 1 5C8018A8
-P 3350 4600
-F 0 "#PWR01" H 3350 4350 50  0001 C CNN
-F 1 "GND" H 3355 4427 50  0000 C CNN
-F 2 "" H 3350 4600 50  0001 C CNN
-F 3 "" H 3350 4600 50  0001 C CNN
-	1    3350 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 4600 3350 4550
-$Comp
-L power:+3.3V #PWR02
-U 1 1 5C804F12
-P 3550 4450
-F 0 "#PWR02" H 3550 4300 50  0001 C CNN
-F 1 "+3.3V" H 3565 4623 50  0000 C CNN
-F 2 "" H 3550 4450 50  0001 C CNN
-F 3 "" H 3550 4450 50  0001 C CNN
-	1    3550 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 4450 3550 4450
-Text Label 3350 4350 2    50   ~ 0
-TXD
-Text Label 3350 4250 2    50   ~ 0
-RXD
 $Comp
 L Device:LED_Small D3
 U 1 1 5C810D74
