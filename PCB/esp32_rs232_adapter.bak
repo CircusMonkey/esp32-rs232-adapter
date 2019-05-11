@@ -1279,10 +1279,10 @@ $EndComp
 Wire Wire Line
 	4100 7050 4100 7100
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J6
 U 1 1 5D0294FC
 P 950 6300
-F 0 "J?" H 950 6200 50  0000 C CNN
+F 0 "J6" H 950 6200 50  0000 C CNN
 F 1 "Shunt+" H 1100 6300 50  0000 C CNN
 F 2 "Connector:Banana_Jack_1Pin" H 950 6300 50  0001 C CNN
 F 3 "~" H 950 6300 50  0001 C CNN
