@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:esp32_rs232_adapter-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -568,91 +568,8 @@ F 3 "~" V 2050 2500 50  0001 C CNN
 	1    2050 2500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Switch:SW_DIP_x08 SW2
-U 1 1 5C88E389
-P 9950 4550
-F 0 "SW2" H 9950 5217 50  0000 C CNN
-F 1 "Null_Modem_Selector" H 9950 5126 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx08_Slide_6.7x21.88mm_W8.61mm_P2.54mm_LowProfile" H 9950 4550 50  0001 C CNN
-F 3 "https://www.aliexpress.com/item/10pcs-lot-Slide-Type-SMT-SMD-Dip-Switch-2-54mm-Pitch-2-Row-4-Pin-2/32956815576.html" H 9950 4550 50  0001 C CNN
-	1    9950 4550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 4150 10250 4150
-Wire Wire Line
-	9650 4150 9350 4150
-Wire Wire Line
-	10450 2500 10450 4150
-Wire Wire Line
-	10450 4150 10450 4550
-Wire Wire Line
-	10450 4550 10250 4550
-Connection ~ 10450 4150
-Wire Wire Line
-	10550 4250 10250 4250
-Wire Wire Line
-	10550 4250 10550 4650
-Wire Wire Line
-	10550 4650 10250 4650
-Connection ~ 10550 4250
-Wire Wire Line
-	10650 4350 10250 4350
-Wire Wire Line
-	10650 4350 10650 4750
-Wire Wire Line
-	10650 4750 10250 4750
-Connection ~ 10650 4350
-Wire Wire Line
-	10750 4450 10250 4450
-Wire Wire Line
-	10750 4450 10750 4850
-Wire Wire Line
-	10750 4850 10250 4850
-Connection ~ 10750 4450
-Wire Wire Line
-	9650 4250 9250 4250
 Wire Wire Line
 	8500 4250 8500 4950
-Wire Wire Line
-	10550 3100 10550 4250
-Wire Wire Line
-	9650 4350 9550 4350
-Wire Wire Line
-	10650 2900 10650 4350
-Wire Wire Line
-	9650 4450 9450 4450
-Wire Wire Line
-	10750 2700 10750 4450
-Wire Wire Line
-	9650 4550 9550 4550
-Wire Wire Line
-	9550 4550 9550 4350
-Connection ~ 9550 4350
-Wire Wire Line
-	9550 4350 8600 4350
-Wire Wire Line
-	9650 4750 9350 4750
-Wire Wire Line
-	9350 4750 9350 4150
-Connection ~ 9350 4150
-Wire Wire Line
-	9350 4150 8400 4150
-Wire Wire Line
-	9650 4650 9450 4650
-Wire Wire Line
-	9450 4650 9450 4450
-Connection ~ 9450 4450
-Wire Wire Line
-	9450 4450 8700 4450
-Wire Wire Line
-	9650 4850 9250 4850
-Wire Wire Line
-	9250 4850 9250 4250
-Connection ~ 9250 4250
-Wire Wire Line
-	9250 4250 8500 4250
 $Comp
 L Mechanical:MountingHole H?
 U 1 1 5C979F20
@@ -1289,4 +1206,20 @@ F 3 "~" H 950 6300 50  0001 C CNN
 	1    950  6300
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	10750 2700 10750 4450
+Wire Wire Line
+	10650 2900 10650 4350
+Wire Wire Line
+	10550 3100 10550 4250
+Wire Wire Line
+	10450 2500 10450 4150
+Wire Wire Line
+	8400 4150 10450 4150
+Wire Wire Line
+	8500 4250 10550 4250
+Wire Wire Line
+	8600 4350 10650 4350
+Wire Wire Line
+	8700 4450 10750 4450
 $EndSCHEMATC
